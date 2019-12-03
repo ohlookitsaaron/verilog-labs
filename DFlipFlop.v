@@ -10,6 +10,18 @@ module DFlipFlop(
   always @(posedge clk) // executes at every clock rising edge
     begin
       q <= d;
+  
     end
   
+  
 endmodule
+
+module DFlipFlop_top( // testing flip flop
+  input wire clk,
+  output reg q
+);
+
+  DFlipFlop uut (clk, 0, q);
+
+endmodule
+  
