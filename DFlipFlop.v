@@ -12,8 +12,8 @@ module DFlipFlop(
       q <= d;
     end
   
-  
 endmodule
+
 
 module DFlipFlop_top( // testing flip flop
   input wire clk,
