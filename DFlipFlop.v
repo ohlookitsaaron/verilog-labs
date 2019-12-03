@@ -20,7 +20,7 @@ module DFlipFlop_top( // testing flip flop
   output reg q
 );
 
-  DFlipFlop uut (clk, 0, q);
+  DFlipFlop testing (clk, 0, q);
 
 endmodule
   
