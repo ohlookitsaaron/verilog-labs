@@ -10,7 +10,6 @@ module DFlipFlop(
   always @(posedge clk) // executes at every clock rising edge
     begin
       q <= d;
-  
     end
   
   
