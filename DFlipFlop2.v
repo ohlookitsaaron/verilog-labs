@@ -15,3 +15,12 @@ module DFlipFlop2(
   
 endmodule
 
+module DFlipFlop2_top( // testing flip flop
+  input wire clk,
+  output reg qi
+);
+
+  DFlipFlop2 testing (clk, 0, q);
+
+endmodule
+  
