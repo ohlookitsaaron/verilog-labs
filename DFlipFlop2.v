@@ -9,8 +9,8 @@ module srDFlipFlop(
 
   always @(posedge clk) // executes at every clock rising edge
     begin
-      q <= s & r;
-      qi <= s;
+      qi <= ~(~(s | q) | r);
+      q <= s & q;
     end
   
 endmodule
