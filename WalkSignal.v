@@ -14,3 +14,13 @@ module WalkSignal(
     end
   
 endmodule
+
+module WalkSignal_top( // testing cross walk
+  input wire clk, x, y,
+  output reg sx, reg sy
+);
+
+  WalkSignal testing (clk, 1, 0, sx, sy);
+
+endmodule
+  
