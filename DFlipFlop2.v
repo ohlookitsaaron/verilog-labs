@@ -17,10 +17,10 @@ endmodule
 
 module DFlipFlop2_top( // testing flip flop
   input wire clk,
-  output reg qi
+  output reg q, reg qi
 );
 
-  DFlipFlop2 testing (clk, 0, q);
+  DFlipFlop2 testing (clk, 0, 0, q, qi);
 
 endmodule
   
