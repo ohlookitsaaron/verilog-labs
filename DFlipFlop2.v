@@ -2,7 +2,7 @@
 `timescale 1ns/100ps
 
 // input/output of module
-module DFlipFlop2(
+module srDFlipFlop(
   input wire clk, s, r,
   output reg q, reg qi
 );
@@ -15,12 +15,12 @@ module DFlipFlop2(
   
 endmodule
 
-module DFlipFlop2_top( // testing flip flop
+module srDFlipFlop_top( // testing flip flop
   input wire clk,
   output reg q, reg qi
 );
 
-  DFlipFlop2 testing (clk, 0, 0, q, qi);
+  srDFlipFlop testing (clk, 0, 0, q, qi);
 
 endmodule
   
