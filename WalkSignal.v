@@ -9,18 +9,18 @@ module WalkSignal(
 
   always @(posedge clk) // executes at every clock rising edge
     begin
-      sx <= x;
-      sy <= y;
+      sx <= (x & ~y);
+      sy <= (~x & y);
     end
   
 endmodule
 
 module WalkSignal_top( // testing cross walk
-  input wire clk, x, y,
+  input wire clk,
   output reg sx, reg sy
 );
 
-  WalkSignal testing (clk, 1, 0, sx, sy);
+  WalkSignal testing (clk, 0, 0, sx, sy);
 
 endmodule
   
