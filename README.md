@@ -1,4 +1,4 @@
-verilog-labs
+Verilog Labs for ENGR 250 (8bitworkshop)
 =====
 1: a_and_not_b-or-a_and_not_c.v<br />
 2: DFlipFlop.v<br />
